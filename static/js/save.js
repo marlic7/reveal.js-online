@@ -13,13 +13,15 @@ $(function() {
       editor = $('#editor textarea')[0];
       markdown = editor.value;
     } else {
-      editor = ace.edit("editor");
+      editor = ace.edit('editor');
       markdown = editor.getValue();
     }
 
-    $.ajax("/slides.md", {
+    $.ajax('/slides.md', {
       type: 'put',
       data: markdown,
+      datatype : 'text',
+      contentType: 'text/plain; charset=utf-8',
       success: reloadMarkdown
     });
   };
