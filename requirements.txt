@@ -1,5 +1,0 @@
-flask
-Werkzeug
-Jinja2
-itsdangerous
-markupsafe
