@@ -12,6 +12,7 @@
 
 ---
 
+
 ## Quick tips
 
 - There is also a speaker view, with notes - press '`s`'
@@ -25,6 +26,8 @@ Note:
 ---
 
 ## Learn more
+
+<img src="https://octodex.github.com/images/yaktocat.png" width="300">
 
 - [RevealJS Demo/Manual](http://lab.hakim.se/reveal-js)
 - [RevealJS Project/README](https://github.com/hakimel/reveal.js)

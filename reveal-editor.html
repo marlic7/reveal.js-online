@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Hacker Slides</title>
+
+  <link rel="stylesheet" href="/static/css/index.css">
+</head>
+
+<body>
+
+  <div id="edit-pane">
+    <div id="controls">
+      <a id="plain-text-link"></a> |
+      <a href="/reveal.html" target="_blank" onclick="save();"> Present</a>
+    </div>
+    <div id="editor"></div>
+  </div>
+
+  <div id="preview">
+    <iframe id="slides-frame" src="/static/slides.html?preview"></iframe>
+  </div>
+
+  <script src="/static/revealjs/js/ace-1.1.8/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/static/revealjs/js/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/static/revealjs/js/jquery-debounce-1.0.5.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/static/js/save.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/static/js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
