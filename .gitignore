@@ -1,2 +1,5 @@
-.vagrant
-*.swp
+*.user
+*.user.md
+.env
+node_modules
+.DS_Store
