@@ -19,6 +19,7 @@ def index():
     publishing_root = publishing.publish(request.headers["X-Sandstorm-Session-Id"])
     return render_template('index.html', publishing_root=publishing_root)
 
+
 @app.route('/slides.md', methods=['GET'])
 def get_slides():
     with open("/var/slides.md", encoding='utf-8') as fp:
