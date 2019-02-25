@@ -30,11 +30,13 @@ $(function() {
 
   function setupAceEditor() {
     var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/chrome");
+    editor.setTheme("ace/theme/dawn");
     editor.getSession().setMode("ace/mode/markdown");
     editor.getSession().setUseWrapMode(true);
     editor.setShowPrintMargin(true);
-
+    editor.setOptions({
+      fontSize: "14px"
+    });
     $.get('/slides.md', function(data) {
       editor.setValue(data, -1);
     });
