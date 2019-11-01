@@ -1,0 +1,9 @@
+version: "2"
+services:
+  presentation:
+    image: "reveal.js-online"
+    container_name: revealjs-presentation
+    ports:
+      - 8001:8001
+    volumes:
+      - ./test/data:/app/data

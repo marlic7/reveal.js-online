@@ -1,10 +1,20 @@
 {
-  "name": "hacker-slides",
+  "name": "reveal.js-online",
   "version": "1.0.0",
   "description": "A simple app that combines Ace Editor and RevealJS. You can write markdown on the left, and preview your presentation on the right.",
+  "keywords": [
+    "reveal.js",
+    "reveal-md",
+    "beautiful presentations",
+    "presentation editor",
+    "markdown"
+  ],
   "main": "app.js",
   "scripts": {
-    "start-dev": "DEBUG=app node ./app.js"
+    "start": "node ./app.js",
+    "start-dev": "DEBUG=app node ./app.js",
+    "build-docker": "docker build -t reveal.js-online .",
+    "test": "docker-compose up"
   },
   "repository": {
     "type": "git",
