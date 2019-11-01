@@ -64,8 +64,21 @@ function externalLinksInNewWindow() {
   }).attr('target', '_blank');
 }
 
+function setupPrintPdf() {
+  $(document).ready(function() {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi)
+        ? '/static/revealjs/css/print/pdf.css'
+        : '/static/revealjs/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  });
+}
+
 insertMarkdownReference();
 initializeReveal();
+setupPrintPdf();
 
 // Monkey patch Reveal so we can reload markdown through an
 // inter window message (using the reveal rpc api)
