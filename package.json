@@ -10,6 +10,7 @@
     "markdown"
   ],
   "main": "app.js",
+  "bin": "./bin/revealjs-start-pres.sh",
   "scripts": {
     "start": "node ./app.js",
     "start-dev": "DEBUG=app node ./app.js",
@@ -20,7 +21,17 @@
     "type": "git",
     "url": "git+https://github.com/makusatori/hacker-slides.git"
   },
-  "author": "Mariusz Lichota",
+  "author": "Jack Singleton",
+  "contributors": [
+    "Mariusz Lichota",
+    "makusatori",
+    "jeau",
+    "Thierry Pasquier",
+    "Asheesh Laroia",
+    "Drew Fisher",
+    "okapi6",
+    "Corey Ford"
+  ],
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
