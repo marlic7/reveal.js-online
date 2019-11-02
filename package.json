@@ -1,6 +1,6 @@
 {
   "name": "reveal.js-online",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple app that combines Ace Editor and RevealJS. You can write markdown on the left, and preview your presentation on the right.",
   "keywords": [
     "reveal.js",

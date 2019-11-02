@@ -1,7 +1,7 @@
 version: "2"
 services:
   presentation:
-    image: "reveal.js-online"
+    image: "marlic/reveal.js-online"
     container_name: revealjs-presentation
     ports:
       - 8001:8001

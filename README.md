@@ -23,7 +23,7 @@ npx reveal.js-online
 
 If missing NPM (Node Package Manager) run just:
 ```bash
-docker run -it --rm -p 8001:8001 -v "${PWD}":/app/data reveal.js-online
+docker run -it --rm -p 8001:8001 -v "${PWD}":/app/data marlic/reveal.js-online
 ```
 
 Next open in browser: http://localhost:8001
