@@ -63,6 +63,6 @@ app.get('/slides.md', function (req, res) {
 app.use(express.static('.'));
 
 app.listen(port, function () {
-    console.log('Listening on http://localhost:' + port);
+    console.log('Listening on http://127.0.0.1:' + port);
 });
 
